@@ -7,7 +7,7 @@
 <div id="app" v-cloak>
   <%= form_for @query, url: (@query.persisted? ? query_path(@query, params: @variable_params) : queries_path(params: @variable_params)), html: {autocomplete: "off"} do |f| %>
     <div class="row">
-      <div id="statement-box" class="col-xs-8">
+      <div id="statement-box" class="col-sm-8">
         <div class= "form-group">
           <%= f.hidden_field :statement %>
           <div id="editor-container">
